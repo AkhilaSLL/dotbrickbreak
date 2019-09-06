@@ -60,12 +60,12 @@ void Player() {
   CurrPosition(playerPos); 
 
   x = analogRead(PINX);
-  if (x <= 200) {
+  if (x <= 300) {
     --playerPos;
     if (playerPos < 0) playerPos = 0;
     delay(150);
     mtrx.clearDisplay(0);
-  } else if (x >= 900) {
+  } else if (x >= 700) {
     ++playerPos;
     if (playerPos > 7) playerPos = 7;
     delay(150);
